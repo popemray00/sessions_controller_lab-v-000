@@ -11,6 +11,6 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    session
+    session.delete :name
   end
 end
